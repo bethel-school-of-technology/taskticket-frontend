@@ -1,14 +1,68 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 class SignUp extends Component {
-    render() {
-        return (
-            <div>
-                Sign Up Page
-            </div>
-        )
-    }
+  constructor() {
+    super();
+
+    this.state = {
+      email: '',
+      password: '',
+      name: '',
+    };
+
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  handleChange(e) {
+    let target = e.target;
+    let value = target.value;
+    let name = target.name;
+
+    this.setState({
+      [name]: value
+    });
+  }
+
+  handleSubmit(e) {
+    e.preventDefault();
+
+    console.log('The form was submitted with the following data:');
+    console.log(this.state);
+  }
+
+  render() {
+    return (
+      <div className="FormCenter">
+        <form onSubmit={this.handleSubmit} className="FormFields">
+          <div className="FormField">
+            <label className="FormField__Label" htmlFor="name">Business (optional): </label>
+            <input type="text" id="ame" className="FormField__Input" placeholder="Enter your business name" name="businessName" value={this.state.businessName} onChange={this.handleChange} />
+          </div>
+          <div className="FormField">
+            <label className="FormField__Label" htmlFor="name">First Name: </label>
+            <input type="text" id="ame" className="FormField__Input" placeholder="Enter your first name" name="firstName" value={this.state.firstName} onChange={this.handleChange} />
+          </div>
+          <div className="FormField">
+            <label className="FormField__Label" htmlFor="name">Last Name: </label>
+            <input type="text" id="name" className="FormField__Input" placeholder="Enter your last name" name="lastName" value={this.state.lastName} onChange={this.handleChange} />
+          </div>
+          <div className="FormField">
+            <label className="FormField__Label" htmlFor="email">E-Mail: </label>
+            <input type="email" id="email" className="FormField__Input" placeholder="Enter your email" name="email" value={this.state.email} onChange={this.handleChange} />
+          </div>
+          <div className="FormField">
+            <label className="FormField__Label" htmlFor="password">Password: </label>
+            <input type="password" id="password" className="FormField__Input" placeholder="Enter your password" name="password" value={this.state.password} onChange={this.handleChange} />
+          </div>
+          
+          <div className="FormField">
+            <button className="FormField__Button mr-20">Sign Up</button> <Link to="/login" className="FormField__Link">Have an account?</Link>
+          </div>
+        </form>
+      </div>
+    );
+  }
 }
-
-
 export default SignUp;
