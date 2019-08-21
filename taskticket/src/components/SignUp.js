@@ -62,7 +62,7 @@ class SignUp extends Component {
           </div>
           <div className="FormField">
             <label className="FormField__Label" htmlFor="address">Zip Code: </label>
-            <input type="text" id="address" className="FormField__Input" placeholder="Enter your street address" name="streetAddress" value={this.state.streetAddress} onChange={this.handleChange} />
+            <input type="text" id="address" className="FormField__Input" placeholder="Enter your zip code" name="streetAddress" value={this.state.streetAddress} onChange={this.handleChange} />
           </div>
           <div className="FormField">
             <label className="FormField__Label" htmlFor="email">E-Mail: </label>
