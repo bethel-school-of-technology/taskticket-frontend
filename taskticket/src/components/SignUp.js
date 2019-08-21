@@ -42,11 +42,27 @@ class SignUp extends Component {
           </div>
           <div className="FormField">
             <label className="FormField__Label" htmlFor="name">First Name: </label>
-            <input type="text" id="ame" className="FormField__Input" placeholder="Enter your first name" name="firstName" value={this.state.firstName} onChange={this.handleChange} />
+            <input type="text" id="name" className="FormField__Input" placeholder="Enter your first name" name="firstName" value={this.state.firstName} onChange={this.handleChange} />
           </div>
           <div className="FormField">
             <label className="FormField__Label" htmlFor="name">Last Name: </label>
             <input type="text" id="name" className="FormField__Input" placeholder="Enter your last name" name="lastName" value={this.state.lastName} onChange={this.handleChange} />
+          </div>
+          <div className="FormField">
+            <label className="FormField__Label" htmlFor="address">Street Address: </label>
+            <input type="text" id="address" className="FormField__Input" placeholder="Enter your street address" name="streetAddress" value={this.state.streetAddress} onChange={this.handleChange} />
+          </div>
+          <div className="FormField">
+            <label className="FormField__Label" htmlFor="address">City: </label>
+            <input type="text" id="address" className="FormField__Input" placeholder="Enter your city" name="city" value={this.state.city} onChange={this.handleChange} />
+          </div>
+          <div className="FormField">
+            <label className="FormField__Label" htmlFor="address">State: </label>
+            <input type="text" id="address" className="FormField__Input" placeholder="Enter your state" name="state" value={this.state.state} onChange={this.handleChange} />
+          </div>
+          <div className="FormField">
+            <label className="FormField__Label" htmlFor="address">Zip Code: </label>
+            <input type="text" id="address" className="FormField__Input" placeholder="Enter your street address" name="streetAddress" value={this.state.streetAddress} onChange={this.handleChange} />
           </div>
           <div className="FormField">
             <label className="FormField__Label" htmlFor="email">E-Mail: </label>
