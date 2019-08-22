@@ -65,6 +65,10 @@ class SignUp extends Component {
             <input type="text" id="address" className="FormField__Input" placeholder="Enter your zip code" name="streetAddress" value={this.state.streetAddress} onChange={this.handleChange} />
           </div>
           <div className="FormField">
+            <label className="FormField__Label" htmlFor="phoneNumber">Phone Number: </label>
+            <input type="number" id="number" className="FormField__Input" placeholder="Enter your phone number" name="phoneNumber" value={this.state.phoneNumber} onChange={this.handleChange} />
+          </div>
+          <div className="FormField">
             <label className="FormField__Label" htmlFor="email">E-Mail: </label>
             <input type="email" id="email" className="FormField__Input" placeholder="Enter your email" name="email" value={this.state.email} onChange={this.handleChange} />
           </div>
