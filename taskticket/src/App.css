@@ -1,5 +1,6 @@
 nav {
     display: grid;
+    background-color: blueviolet;
 }
 
 .main-nav {
@@ -7,4 +8,8 @@ nav {
     margin: auto;
     grid-column: col-start / span 12;
     grid-row: row-start / span 10;
+}
+
+a {
+    color: white;
 }
