@@ -37,8 +37,8 @@ class SignUp extends Component {
       <div className="FormCenter">
         <form onSubmit={this.handleSubmit} className="FormFields">
           <div className="FormField">
-            <label className="FormField__Label" htmlFor="name">Business (optional): </label>
-            <input type="text" id="ame" className="FormField__Input" placeholder="Enter your business name" name="businessName" value={this.state.businessName} onChange={this.handleChange} />
+            <label className="FormField__Label" htmlFor="business">Business (optional): </label>
+            <input type="text" id="business" className="FormField__Input" placeholder="Enter your business name" name="businessName" value={this.state.businessName} onChange={this.handleChange} />
           </div>
           <div className="FormField">
             <label className="FormField__Label" htmlFor="name">First Name: </label>
@@ -63,6 +63,10 @@ class SignUp extends Component {
           <div className="FormField">
             <label className="FormField__Label" htmlFor="address">Zip Code: </label>
             <input type="text" id="address" className="FormField__Input" placeholder="Enter your zip code" name="streetAddress" value={this.state.streetAddress} onChange={this.handleChange} />
+          </div>
+          <div className="FormField">
+            <label className="FormField__Label" htmlFor="phoneNumber">Phone Number: </label>
+            <input type="number" id="number" className="FormField__Input" placeholder="Enter your phone number" name="phoneNumber" value={this.state.phoneNumber} onChange={this.handleChange} />
           </div>
           <div className="FormField">
             <label className="FormField__Label" htmlFor="email">E-Mail: </label>
