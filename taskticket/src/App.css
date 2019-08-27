@@ -1,1 +1,10 @@
+nav {
+    display: grid;
+}
 
+.main-nav {
+    width: auto;
+    margin: auto;
+    grid-column: col-start / span 12;
+    grid-row: row-start / span 10;
+}

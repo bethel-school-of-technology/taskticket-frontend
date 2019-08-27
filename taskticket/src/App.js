@@ -7,10 +7,12 @@ import Login from './components/Login';
 import SignUp from './components/SignUp';
 import Request from './components/Request';
 import Payment from './components/Payment';
+import Navbar from './components/Navbar';
 
 function App() {
   return (
     <div className="App">
+      <Navbar />
       <Router>
         <Route path="/" exact component={Home} />
         <Route path="/login" component={Login} />
