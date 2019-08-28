@@ -1,15 +1,35 @@
-nav {
-    display: grid;
-    background-color: blueviolet;
-}
-
-.main-nav {
-    width: auto;
-    margin: auto;
-    grid-column: col-start / span 12;
-    grid-row: row-start / span 10;
-}
-
-a {
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: sticky;
+    top: 0;
+    width: 100%;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
     color: white;
-}
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #111;
+  }
+
+  .active {
+    background-color: #4CAF50;
+  }
+
+  .signup {
+      float: right;
+  }
