@@ -8,8 +8,8 @@ class Navbar extends Component {
                     <ul className="menu">
                         <li><a href="/">Logo</a></li>
                         <li><a href="/">Home</a></li>
-                        <li className="signup"><a href="/">Sign Up</a></li>
-                        <li className="signup"><a href="/">Login</a></li>
+                        <li className="signup"><a href="/signup">Sign Up</a></li>
+                        <li className="signup"><a href="/login">Login</a></li>
                     </ul>
                 </nav>
             </div>
