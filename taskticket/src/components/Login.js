@@ -33,6 +33,7 @@ class Login extends Component {
 
     render() {
         return (
+
             <div className="FormCenter">
                 <form onSubmit={this.handleSubmit} className="FormFields" onSubmit={this.handleSubmit}>
                     <div className="FormField">
@@ -50,6 +51,8 @@ class Login extends Component {
                     </div>
                 </form>
             </div>
+
+
         );
     }
 }
