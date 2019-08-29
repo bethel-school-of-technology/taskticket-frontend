@@ -8,6 +8,7 @@ import SignUp from './components/SignUp';
 import Request from './components/Request';
 import Payment from './components/Payment';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/request" component={Request} />
         <Route path="/payment" component={Payment} />
       </Router>
+      <Footer />
     </div>
   );
 }
