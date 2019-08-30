@@ -14,15 +14,12 @@ import Navbar from './components/Navbar';
 class App extends Component {
   render() {
     return (
-      <div className="App">
         <Router>
           <ErrorHandler>
+            <Navbar />
             <div className="App">
-              
               <div className="App__Aside"><Route path="/" component={Header} /></div>
-              <Navbar />
               <div className="App__Form">
-                
                 <Route exact path="/" component={Home} />
                 <Route path="/login" component={Login} />
                 <Route path="/signUp" component={SignUp} />
@@ -32,7 +29,6 @@ class App extends Component {
             </div>
           </ErrorHandler>
         </Router>
-      </div>
         
     );
   }
