@@ -1,13 +1,13 @@
 
+/* .half-black {
+    background: rgba(0, 0, 0, 0.5);
+} */
 .App {
     min-height: 100vh;
     display: flex;
     color: white;
     background-image: url("img/bg.jpg");
     background-size: contain;
-}
-.half-black {
-    background: rgba(0, 0, 0, 0.5);
 }
 .App__Name { 
     margin: auto;
@@ -102,7 +102,7 @@
     text-decoration: none;
     display: inline-block;
     font-size: 1.7em;
-    margin: 0 10px;
+    margin: 10px;
     padding-bottom: 5px;
 }
   
