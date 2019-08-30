@@ -6,7 +6,7 @@ import Header from './components/Header';
 import Home from './components/Home';
 import Login from './components/Login';
 import SignUp from './components/SignUp';
-import Request from './components/Request';
+import Request from './components/RequestForm';
 import Payment from './components/Payment';
 import ErrorHandler from './components/ErrorHandler';
 import Navbar from './components/Navbar';
