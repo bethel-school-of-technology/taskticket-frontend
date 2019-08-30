@@ -38,19 +38,22 @@
 .FormField__Button:hover {
   background-color: #111;
 }
+.FormField__Button:hover {
+    background-color: #111;
+}
 .FormField__Link {
   color: grey
 }
 .App__Aside {
-  width: 50%;
-  background-color: rgba(0, 0, 0, 0.3);
-  ;
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.3);
+    ;
 }
 .App__Form {
-  width: 50%;
-  background-color: rgba(0, 0, 0, 0.3);
-  padding: 25px 10px;
-  overflow: auto;
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 25px 10px;
+    overflow: auto;
 }
 
 /* .PageSwitcher {
@@ -96,14 +99,14 @@
 }
 
 .FormTitle__Link {
-  color: #707C8B;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 1.7em;
-  margin: 10px;
-  padding-bottom: 5px;
+    color: #707C8B;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.7em;
+    margin: 10px;
+    padding-bottom: 5px;
 }
-
+  
 .FormTitle__Link:first-child {
   margin-left: 0;
 }
@@ -154,12 +157,12 @@
   margin-left: 5px;
 }
 .logo_img {
-  width: 15em;
-  height: 13 em;
-  padding-left: 2.5em;
-  padding-right: 4em;
-  padding-top: 3em;
-  padding-bottom: 2em;
+    width: 15em;
+    height: 13 em;
+    padding-left: 2.5em;
+    padding-right: 4em;
+    padding-top: 3em;
+    padding-bottom: 2em;
 }
 ul {
   list-style-type: none;
