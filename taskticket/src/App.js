@@ -9,6 +9,8 @@ import Request from './components/RequestForm';
 import Payment from './components/Payment';
 import ErrorHandler from './components/ErrorHandler';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+
 class App extends Component {
   render() {
     return (
@@ -25,6 +27,7 @@ class App extends Component {
                 <Route path="/payment" component={Payment} />
               </div>
             </div>
+            <Footer />
           </ErrorHandler>
         </Router>
         

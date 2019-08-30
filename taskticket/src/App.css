@@ -164,7 +164,7 @@
     padding-top: 3em;
     padding-bottom: 2em;
 }
-ul {
+.menu {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -175,11 +175,19 @@ ul {
   width: 100%;
 }
 
+.footer {
+  background-color: #333;
+  color: white;
+  margin: 0;
+  padding: 1px;
+  text-align: center;
+}
+
 li {
   float: left;
 }
 
-li a {
+.navlink {
   display: block;
   color: white;
   text-align: center;

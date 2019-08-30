@@ -6,10 +6,10 @@ class Navbar extends Component {
             <div>
                 <nav className="navigation">
                     <ul className="menu">
-                        <li><a href="/">Home</a></li>
-                        <li className="signup"><a href="/request">Request</a></li>
-                        <li className="signup"><a href="/signup">Sign Up</a></li>
-                        <li className="signup"><a href="/login">Login</a></li>
+                        <li><a className="navlink" href="/">Home</a></li>
+                        <li className="signup"><a className="navlink" href="/request">Request</a></li>
+                        <li className="signup"><a className="navlink" href="/signup">Sign Up</a></li>
+                        <li className="signup"><a className="navlink" href="/login">Login</a></li>
                     </ul>
                 </nav>
             </div>
