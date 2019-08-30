@@ -3,9 +3,9 @@ import React, { Component } from 'react';
 class Home extends Component {
     render() {
         return (
-            <div>
-                Home Page
-            </div>
+            <h1 className="App__Name">Task Ticket</h1>
+            
+            
         )
     }
 }
