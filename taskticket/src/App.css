@@ -152,6 +152,7 @@
   position: sticky;
   top: 0;
   width: 100%;
+  font-family: sans-serif;
 }
 
 .footer {
@@ -183,4 +184,80 @@ li a:hover {
 }
 .signup {
     float: right;
+}
+
+.Home_Page {
+  font-family: sans-serif;
+}
+
+.aboutP {
+  font-family: sans-serif;
+  font-size: large;
+  text-align: center;
+}
+
+.Ind_About {
+  font-family: sans-serif;
+  font-size: large;
+  text-align: center;
+  display: flex;
+}
+
+.Mandee_About {
+  width: 50%;
+}
+
+.Shannon_About {
+  flex-grow: 1;
+}
+
+.Vali_About {
+  width: 50%;
+}
+
+.James_About {
+  flex-grow: 1;
+}
+
+hr { 
+  display: block;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  margin-block-start: auto;
+  margin-block-end: auto;
+  overflow: hidden;
+  border-style: solid;
+  border-width: 5px;
+  margin-top: 50px;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #0e76a8;
+  color: white;
+}
+
+.fa-github {
+  background: white;
+  color: black;
 }
