@@ -132,8 +132,17 @@
     padding-left: 2.5em;
     padding-right: 4em;
     padding-top: 3em;
-    padding-bottom: 2em;
+    padding-bottom: 3em;
 }
+/* .logo_img {
+  position: relative;
+  background: url("./img/logo.png") no repeat;
+  background-size: 25% 25%;
+  background-attachment: fixed;
+  background-position: left;
+  height: 75vh;
+  display: inherit;
+} */
 .menu {
   list-style-type: none;
   margin: 0;
