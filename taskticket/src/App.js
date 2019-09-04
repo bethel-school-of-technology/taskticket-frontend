@@ -5,11 +5,12 @@ import Header from './components/Header';
 import Home from './components/Home';
 import Login from './components/Login';
 import SignUp from './components/SignUp';
-import Request from './components/RequestForm';
+import RequestForm from './components/RequestForm';
 import Payment from './components/Payment';
 import ErrorHandler from './components/ErrorHandler';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import RequestList from './components/RequestList';
 
 class App extends Component {
   render() {
@@ -23,7 +24,8 @@ class App extends Component {
                 <Route exact path="/" component={Home} />
                 <Route path="/login" component={Login} />
                 <Route path="/signUp" component={SignUp} />
-                <Route path="/request" component={Request} />
+                <Route path="/request" component={RequestForm} />
+                <Route path="/requestList" component={RequestList} />
                 <Route path="/payment" component={Payment} />
               </div>
             </div>

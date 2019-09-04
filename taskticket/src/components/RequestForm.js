@@ -71,7 +71,7 @@ class Request extends Component {
                         </select>
                     </label>
                     <div className="FormField">
-                        <button className="FormField__Button mr-20">Send message</button> <Link to="/response" className="FormField__Link">To response page</Link>
+                        <button className="FormField__Button mr-20">Send Message</button> <Link to="/requestList" className="FormField__Link">To Messages</Link>
                     </div>
                 </form>
             </Router>
