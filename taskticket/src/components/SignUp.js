@@ -38,36 +38,8 @@ class SignUp extends Component {
       <div className="FormCenter">
         <form onSubmit={this.handleSubmit} className="FormFields">
           <div className="FormField">
-            <label className="FormField__Label" htmlFor="business">Business (optional): </label>
-            <input type="text" id="business" className="FormField__Input" placeholder="Enter your business name" name="businessName" value={this.state.businessName} onChange={this.handleChange} />
-          </div>
-          <div className="FormField">
-            <label className="FormField__Label" htmlFor="name">First Name: </label>
-            <input type="text" id="name" className="FormField__Input" placeholder="Enter your first name" name="firstName" value={this.state.firstName} onChange={this.handleChange} />
-          </div>
-          <div className="FormField">
-            <label className="FormField__Label" htmlFor="name">Last Name: </label>
-            <input type="text" id="name" className="FormField__Input" placeholder="Enter your last name" name="lastName" value={this.state.lastName} onChange={this.handleChange} />
-          </div>
-          <div className="FormField">
-            <label className="FormField__Label" htmlFor="address">Street Address: </label>
-            <input type="text" id="address" className="FormField__Input" placeholder="Enter your street address" name="streetAddress" value={this.state.streetAddress} onChange={this.handleChange} />
-          </div>
-          <div className="FormField">
-            <label className="FormField__Label" htmlFor="address">City: </label>
-            <input type="text" id="address" className="FormField__Input" placeholder="Enter your city" name="city" value={this.state.city} onChange={this.handleChange} />
-          </div>
-          <div className="FormField">
-            <label className="FormField__Label" htmlFor="address">State: </label>
-            <input type="text" id="address" className="FormField__Input" placeholder="Enter your state" name="state" value={this.state.state} onChange={this.handleChange} />
-          </div>
-          <div className="FormField">
-            <label className="FormField__Label" htmlFor="address">Zip Code: </label>
-            <input type="text" id="address" className="FormField__Input" placeholder="Enter your zip code" name="streetAddress" value={this.state.streetAddress} onChange={this.handleChange} />
-          </div>
-          <div className="FormField">
-            <label className="FormField__Label" htmlFor="phoneNumber">Phone Number: </label>
-            <input type="number" id="number" className="FormField__Input" placeholder="Enter your phone number" name="phoneNumber" value={this.state.phoneNumber} onChange={this.handleChange} />
+            <label className="FormField__Label" htmlFor="name">Full Name: </label>
+            <input type="text" id="name" className="FormField__Input" placeholder="Enter your full name" name="fullName" value={this.state.fullName} onChange={this.handleChange} />
           </div>
           <div className="FormField">
             <label className="FormField__Label" htmlFor="email">E-Mail: </label>
