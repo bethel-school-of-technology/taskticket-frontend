@@ -10,6 +10,7 @@ import Payment from './components/Payment';
 import ErrorHandler from './components/ErrorHandler';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import UserProfile from './components/UserProfile';
 
 class App extends Component {
   render() {
@@ -25,6 +26,7 @@ class App extends Component {
                 <Route path="/signUp" component={SignUp} />
                 <Route path="/request" component={Request} />
                 <Route path="/payment" component={Payment} />
+                <Route path="/userProfile" component={UserProfile} />
               </div>
             </div>
             <Footer />
