@@ -49,6 +49,7 @@ class Home extends Component {
 
                     <div className="James_About">
                         <h3>James Ramsey</h3>
+                        <a target="_blank" href="https://www.facebook.com/james.ramsey.758" class="fa fa-facebook"></a>
                         <a target="_blank" href="https://github.com/ramseyman86" class="fa fa-github"></a>
                     </div>
                 </div>
