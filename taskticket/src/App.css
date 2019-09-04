@@ -262,3 +262,12 @@ hr {
   background: white;
   color: black;
 }
+
+/* Hides "Test" code which was placed there to fix an error for screenreaders */
+.hide_text {
+  height: 1px;
+  width: 1px;
+  position: absolute;
+  overflow: hidden;
+  top: -10px;
+}

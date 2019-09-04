@@ -23,18 +23,18 @@ class Home extends Component {
                 <div className="Ind_About">
                     <div className="Mandee_About">
                         <h3>Mandee Miller</h3>
-                        <a target="_blank" href="https://www.facebook.com/mandee.miller.9" class="fa fa-facebook"></a>
-                        <a target="_blank" href="https://www.linkedin.com/in/mandee-miller-35a99b185/" class="fa fa-linkedin"></a>
-                        <a target="_blank" href="https://github.com/mandeelaraye" class="fa fa-github"></a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/mandee.miller.9" class="fa fa-facebook"><span className="hide_text">Test</span></a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/mandee-miller-35a99b185/" class="fa fa-linkedin"><span className="hide_text">Test</span></a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://github.com/mandeelaraye" class="fa fa-github"><span className="hide_text">Test</span></a>
                     </div>
 
 
 
                     <div className="Shannon_About">
                         <h3>Shannon Wolff</h3>
-                        <a target="_blank" href="https://www.facebook.com/shewolff182" class="fa fa-facebook"></a>
-                        <a target="_blank" href="https://www.linkedin.com/in/shewolff182/" class="fa fa-linkedin"></a>
-                        <a target="_blank" href="https://github.com/Shewolff182" class="fa fa-github"></a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/shewolff182" class="fa fa-facebook"><span className="hide_text">Test</span></a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/shewolff182/" class="fa fa-linkedin"><span className="hide_text">Test</span></a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://github.com/Shewolff182" class="fa fa-github"><span className="hide_text">Test</span></a>
                     </div>
 
                 </div>
@@ -42,15 +42,15 @@ class Home extends Component {
                 <div className="Ind_About">
                     <div className="Vali_About">
                         <h3>Vali Masca</h3>
-                        <a target="_blank" href="https://www.facebook.com/laurean.valer" class="fa fa-facebook"></a>
-                        <a target="_blank" href="https://www.linkedin.com/in/vali-l-masca-06568511b/" class="fa fa-linkedin"></a>
-                        <a target="_blank" href="https://github.com/valimasca" class="fa fa-github"></a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/laurean.valer" class="fa fa-facebook"><span className="hide_text">Test</span></a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/vali-l-masca-06568511b/" class="fa fa-linkedin"><span className="hide_text">Test</span></a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://github.com/valimasca" class="fa fa-github"><span className="hide_text">Test</span></a>
                     </div>
 
                     <div className="James_About">
                         <h3>James Ramsey</h3>
-                        <a target="_blank" href="https://www.facebook.com/james.ramsey.758" class="fa fa-facebook"></a>
-                        <a target="_blank" href="https://github.com/ramseyman86" class="fa fa-github"></a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/james.ramsey.758" class="fa fa-facebook"><span className="hide_text">Test</span></a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://github.com/ramseyman86" class="fa fa-github"><span className="hide_text">Test</span></a>
                     </div>
                 </div>
 
