@@ -1,51 +1,53 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Link } from 'react-router-dom';
-
+import axios from 'axios';
+​
 class Request extends Component {
-    constructor() {
-        super();
-
+    constructor(props) {
+        super(props);
+​
         this.state = {
             item: "",
             description: "",
-            date: "",
             urgency: ""
         };
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
     }
-
-    handleChange(e) {
-        let target = e.target;
-        let value = target.value;
-        let name = target.name;
-
-        this.setState({
-            [name]: value
+​
+    handleSubmit() {
+        const { item, description, urgency } = this.state;
+        const apiUrl = "http://localhost:4000/request";
+​
+        return axios.post(apiUrl, {
+            item,
+            description,
+            urgency
         });
     }
-
-    handleSubmit(e) {
-        e.preventDefault();
-
-        console.log('The form was submitted with the following data:');
-        console.log(this.state);
-    }
-    handleChange(event) {
-        this.setState({ value: event.target.value });
-    }
-
-    handleSubmit(event) {
-        alert('Your message has been sent! Urgency Level : ' + this.state.value);
-        event.preventDefault();
-    }
+​
+    handleChange(key, event) {
+        this.setState({
+          [key]: event.target.value
+        });
+      }
+​
     render() {
+        const { item, description, urgency } = this.state;
+​
         return (
-            <Router path="/request">
-                <form onSubmit={this.handleSubmit} className="FormFields">
+            <React.Fragment>
+                <form className="FormFields">
                     <div className="FormField">
-                        <label className="FormField__Label" htmlFor="item">Item: </label><br></br>
-                        <input type="text" id="item" className="FormField__Input" placeholder="Enter item " name="item" value={this.state.itemName} onChange={this.handleChange} />
+                        <label className="FormField__Label" htmlFor="item">Request Form: </label><br></br>
+                        <input 
+                            onChange={ev => this.handleChange("item", ev)}
+                            value={item}
+                            type="text" 
+                            id="item" 
+                            className="FormField__Input" 
+                            placeholder="Enter item" 
+                            name="item" 
+                            />
                     </div>
                     <div className="App__Form"></div>
                     <div id="writeMessage">Message: </div>
@@ -57,28 +59,28 @@ class Request extends Component {
                             id="description"
                             className="FormReview"
                             placeholder="Description of issue?"
-                            name="comment"
-                            onChange={this.handleChange}
+                            value={description}
+                            onChange={ev => this.handleChange("description", ev)}
                         />
                     </div>
                     <label>
                         Level of Urgency:
-                        <select value={this.state.value} onChange={this.handleChange}>
-                            <option value="UNDEFINED">Undefined</option>
-                            <option value="LOW">Low</option>
-                            <option value="MEDIUM">Medium</option>
-                            <option value="HIGH">High</option>
+                        <select value={urgency} onChange={ev => this.handleChange("urgency", ev)}>
+                            <option value="Undefined">Undefined</option>
+                            <option value="Low">Low</option>
+                            <option value="Medium">Medium</option>
+                            <option value="High">High</option>
                         </select>
-                    </label>
-                    <div className="FormField">
-                        <button className="FormField__Button mr-20">Send Message</button> <Link to="/requestList" className="FormField__Link">To Messages</Link>
-                    </div>
+                    </label> <br />
+                    <button
+                        onClick={this.handleSubmit}
+                    >
+                    Submit
+                    </button>
                 </form>
-            </Router>
-
+                </React.Fragment>
         )
     }
 }
-
-
+​
 export default Request;
