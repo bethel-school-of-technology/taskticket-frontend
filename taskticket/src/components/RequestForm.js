@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-​
+
 class Request extends Component {
     constructor(props) {
         super(props);
-​
         this.state = {
+
+
             item: "",
             description: "",
             urgency: ""
@@ -13,41 +14,37 @@ class Request extends Component {
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
     }
-​
     handleSubmit() {
         const { item, description, urgency } = this.state;
         const apiUrl = "http://localhost:4000/request";
-​
         return axios.post(apiUrl, {
             item,
             description,
             urgency
         });
     }
-​
     handleChange(key, event) {
         this.setState({
-          [key]: event.target.value
+            [key]: event.target.value
         });
-      }
-​
+    }
     render() {
         const { item, description, urgency } = this.state;
-​
+
         return (
             <React.Fragment>
                 <form className="FormFields">
                     <div className="FormField">
                         <label className="FormField__Label" htmlFor="item">Request Form: </label><br></br>
-                        <input 
+                        <input
                             onChange={ev => this.handleChange("item", ev)}
                             value={item}
-                            type="text" 
-                            id="item" 
-                            className="FormField__Input" 
-                            placeholder="Enter item" 
-                            name="item" 
-                            />
+                            type="text"
+                            id="item"
+                            className="FormField__Input"
+                            placeholder="Enter item"
+                            name="item"
+                        />
                     </div>
                     <div className="App__Form"></div>
                     <div id="writeMessage">Message: </div>
@@ -71,16 +68,13 @@ class Request extends Component {
                             <option value="Medium">Medium</option>
                             <option value="High">High</option>
                         </select>
-                    </label> <br />
-                    <button
-                        onClick={this.handleSubmit}
-                    >
-                    Submit
-                    </button>
+                    </label> 
+                    <button className="FormField__Button mr-20" onClick={this.handleSubmit}>Submit</button> 
                 </form>
-                </React.Fragment>
+            </React.Fragment>
         )
     }
 }
-​
+
+
 export default Request;

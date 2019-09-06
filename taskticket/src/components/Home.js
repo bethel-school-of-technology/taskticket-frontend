@@ -13,7 +13,7 @@ class Home extends Component {
                     Patience and dedication were tested.
                     Emotions of all kinds were to arise, but in the end,
                     WE prevailed. WE are developers, WE are qualified,
-                but most importantly WE are family!</p>
+                    but most importantly WE are family!</p>
                 </div>
 
                 <hr></hr>
