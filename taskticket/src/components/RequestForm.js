@@ -68,13 +68,16 @@ class Request extends Component {
                             <option value="Medium">Medium</option>
                             <option value="High">High</option>
                         </select>
-                    </label> 
-                    <button className="FormField__Button mr-20" onClick={this.handleSubmit}>Submit</button> 
+                    </label> <br />
+                    <button
+                        onClick={this.handleSubmit}
+                    >
+                        Submit
+                    </button>
                 </form>
             </React.Fragment>
         )
     }
 }
-
 
 export default Request;
