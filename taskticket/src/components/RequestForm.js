@@ -6,7 +6,6 @@ class Request extends Component {
         super(props);
         this.state = {
 
-
             item: "",
             description: "",
             urgency: ""
@@ -46,8 +45,7 @@ class Request extends Component {
                             name="item"
                         />
                     </div>
-                    <div className="App__Form"></div>
-                    <div id="writeMessage">Message: </div>
+                    <div id="description">Description: </div>
                     <div className="FormField">
                         <textarea
                             rows={10}
@@ -69,7 +67,9 @@ class Request extends Component {
                             <option value="High">High</option>
                         </select>
                     </label> 
-                    <button className="FormField__Button mr-20" onClick={this.handleSubmit}>Submit</button> 
+                    <form className="FormField" action="http://localhost:3000/requests/list" method="post" > 
+                        <button className="FormField__Button mr-20" onClick={this.handleSubmit} type="submit">Submit</button>
+                    </form> 
                 </form>
             </React.Fragment>
         )
