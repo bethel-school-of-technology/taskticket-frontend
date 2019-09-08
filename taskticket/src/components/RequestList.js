@@ -8,7 +8,7 @@ class RequestList extends Component {
     render () {
         return (
             <div className= "RequestList">
-                
+                <p>This is the List page</p>
             </div>
 
         );
