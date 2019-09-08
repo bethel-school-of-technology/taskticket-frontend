@@ -7,12 +7,10 @@ class RequestView extends Component {
     // }
     render () {
         return (
-            // <div className= "RequestView">
-            //     <p>This is the View page</p>
-            // </div>
+            <div className= "RequestView">
+                <p>This is the View page</p>
+            </div>
            
-           
-          
         );
     }
 }
