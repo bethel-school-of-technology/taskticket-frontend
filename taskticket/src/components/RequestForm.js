@@ -67,7 +67,7 @@ class Request extends Component {
                             <option value="High">High</option>
                         </select>
                     </label> 
-                    <form className="FormField" action="http://localhost:3000/requests/list" method="post" > 
+                    <form className="FormField" action="http://localhost:4000/request" method="post" > 
                         <button className="FormField__Button mr-20" onClick={this.handleSubmit} type="submit">Submit</button>
                     </form> 
                 </form>
