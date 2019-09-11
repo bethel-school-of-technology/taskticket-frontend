@@ -50,6 +50,7 @@ class Home extends Component {
                     <div className="James_About">
                         <h3>James Ramsey</h3>
                         <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/james.ramsey.758" class="fa fa-facebook"><span className="hide_text">Test</span></a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/james-ramsey-b72597ab/" class="fa fa-linkedin"><span className="hide_text">Test</span></a>
                         <a target="_blank" rel="noopener noreferrer" href="https://github.com/ramseyman86" class="fa fa-github"><span className="hide_text">Test</span></a>
                     </div>
                 </div>
