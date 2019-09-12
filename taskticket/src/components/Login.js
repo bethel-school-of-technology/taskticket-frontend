@@ -14,65 +14,67 @@ class Login extends Component {
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
     }
-    handleSubmit() {
+    handleSubmit = async event => {
+        event.preventDefault();
+        try {
+            await (this.state.email, this.state.password);
+            alert("Logged in");
+            this.props.history.push("/requests");
+        } catch (e) {
+            alert(e.message);
+        }
         const { email, password } = this.state;
         const apiUrl = "http://localhost:4000/login";
         return axios.post(apiUrl, {
-          email,
-          password
+            email,
+            password
         });
-      }
+    }
 
-      handleChange(key, event) {
+    handleChange(key, event) {
         this.setState({
             [key]: event.target.value
         });
     }
 
-    // handleSubmit(e) {
-    //     e.preventDefault();
-
-    //     console.log('The form was submitted with the following data:');
-    //     console.log(this.state);
-    // }
 
     render() {
         const { email, password } = this.state
         return (
             <React.Fragment>
-            <div className="FormCenter">
-                <form onSubmit={this.handleSubmit} className="FormFields" onSubmit={this.handleSubmit}>
-                    <div className="FormField">
-                        <label className="FormField__Label" htmlFor="email">E-Mail: </label>
-                        <input 
-                        type="email" 
-                        id="email" 
-                        className="FormField__Input" 
-                        placeholder="Enter your email" 
-                        name="email" 
-                        value={email}
-                        onChange={ev => this.handleChange('email', ev)} />
-                    </div>
+                <div className="FormCenter">
+                    <form onSubmit={this.handleSubmit} className="FormFields" onSubmit={this.handleSubmit}>
+                        <div className="FormField">
+                            <label className="FormField__Label" htmlFor="email">E-Mail: </label>
+                            <input
+                                type="email"
+                                id="email"
+                                className="FormField__Input"
+                                placeholder="Enter your email"
+                                name="email"
+                                value={email}
+                                onChange={ev => this.handleChange('email', ev)} />
+                        </div>
 
-                    <div className="FormField">
-                        <label className="FormField__Label" htmlFor="password">Password: </label>
-                        <input
-                        type="password" 
-                        id="password" 
-                        className="FormField__Input" 
-                        placeholder="Enter your password" 
-                        name="password" 
-                        value={password} 
-                        onChange={ev => this.handleChange('password', ev)} />
-                    </div>
+                        <div className="FormField">
+                            <label className="FormField__Label" htmlFor="password">Password: </label>
+                            <input
+                                type="password"
+                                id="password"
+                                className="FormField__Input"
+                                placeholder="Enter your password"
+                                name="password"
+                                value={password}
+                                onChange={ev => this.handleChange('password', ev)} />
+                        </div>
 
-                    <div className="FormField" action="http://localhost:4000/login" method="post">
-                        <button className="FormField__Button mr-20"
-                        onClick={this.handleSubmit}
-                        type="submit">Login</button> <Link to="/signUp" className="FormField__Link">Create an account</Link>
-                    </div>
-                </form>
-            </div>
+                        <div className="FormField" action="http://localhost:4000/login" method="post">
+                            <button className="FormField__Button mr-20"
+                                onClick={this.handleSubmit}
+                                type="submit">Login</button> <Link to="/signUp" className="FormField__Link">Create an account</Link>
+                        </div>
+                    </form>
+                </div>
             </React.Fragment>
 
         );
