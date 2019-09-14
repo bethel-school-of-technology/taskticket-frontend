@@ -13,7 +13,15 @@ class Request extends Component {
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
     }
-    handleSubmit() {
+    handleSubmit = async event => {
+        event.preventDefault();
+        try {
+            await (this.state.item, this.state.description, this.state.urgency);
+            alert("Form submitted");
+            this.props.history.push("/requests/list");
+        } catch (e) {
+            alert(e.message);
+        }
         const { item, description, urgency } = this.state;
         const apiUrl = "http://localhost:4000/request";
         return axios.post(apiUrl, {
@@ -61,15 +69,15 @@ class Request extends Component {
                     <label>
                         Level of Urgency:
                         <select value={urgency} onChange={ev => this.handleChange("urgency", ev)}>
-                            <option value="Undefined">Undefined</option>
+                            <option value="Undefined">Choose Level</option>
                             <option value="Low">Low</option>
                             <option value="Medium">Medium</option>
                             <option value="High">High</option>
                         </select>
-                    </label> 
-                    <form className="FormField" action="http://localhost:4000/request" method="post" > 
+                    </label>
+                    <form className="FormField" action="http://localhost:4000/request" method="post" >
                         <button className="FormField__Button mr-20" onClick={this.handleSubmit} type="submit">Submit</button>
-                    </form> 
+                    </form>
                 </form>
             </React.Fragment>
         )
